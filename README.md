@@ -2,14 +2,31 @@
 This task is the final work of DSA5203 in NUS, we need to classify 15 category pics,
 and in each category there are 100 pictures.
 
-Implementation
+We use keras in Tensorflow2.0 to build our model.
 
-`
-python .\scene_recog_cnn.py --phase="test" --train_data_dir=".\train\" --test_data_dir='.\test\' --model_dir='.\'
-`
+### How to run it? 
 
-![image](./readme_file/image4.png)
-##### Our procedure
+train command in CMD:
+
+```shell script
+python .\scene_recog_cnn.py --phase="train" --train_data_dir=".\data\train\" --test_data_dir='.\data\test\' --model_dir='.\'
+```
+
+train command in CMD:
+
+```shell script
+python .\scene_recog_cnn.py --phase="train" --train_data_dir=".\data\train\" --test_data_dir='.\data\test\' --model_dir='.\'
+```
+
+
+
+<div align=center>![image](./readme_file/image4.png)</div>
+
+<div align=center>
+<img src="./readme_file/image4.png" width="100" height="100" />
+</div>
+
+### Our procedure
 1. Dataset Clean
 
 The existence of dirty data often affects the classification accuracy of the model, so the first thing we do is to clean out the dirty data in the dataset provided. In fact, in our data set, many scenes have high similarity, so it is difficult to distinguish them by simple CNN, and it is even difficult for human eyes to distinguish the corresponding pictures of these scenes. For example, the image_0271.jpg in OpenCountry can also be classified as forest.
