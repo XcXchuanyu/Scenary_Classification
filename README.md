@@ -40,6 +40,7 @@ The existence of dirty data often affects the classification accuracy of the mod
 | RandomRotation  | Randomly in [-90, +90, 180] |
 | Flip  | Filp image in left and right |
 	
+**it will generate a new directory called "augmented" to restore augmented images**
 
 **3. Model design**
 
